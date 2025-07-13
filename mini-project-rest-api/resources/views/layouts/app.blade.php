@@ -118,7 +118,7 @@
                 </a>
                 @auth
                     <a href="" class="@yield('active')">
-                        Menu Apa
+                        Dashboard
                     </a>
                 @endauth
                 <hr>
