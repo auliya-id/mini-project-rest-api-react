@@ -1,0 +1,555 @@
+{
+	"info": {
+		"_postman_id": "082a016b-744b-4335-ad15-711a02ece5d1",
+		"name": "Mini Project Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8770003",
+		"_collection_link": "https://noval-project.postman.co/workspace/My-Workspace~e98997ee-8f26-46b0-8b46-d3d4e34b1813/collection/8770003-082a016b-744b-4335-ad15-711a02ece5d1?action=share&source=collection_link&creator=8770003"
+	},
+	"item": [
+		{
+			"name": "barang",
+			"item": [
+				{
+					"name": "get barang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/barang",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"barang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store barang",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_barang",
+									"value": "LAPTOP",
+									"type": "text"
+								},
+								{
+									"key": "kategori",
+									"value": "ELEKTRONIK",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "15000000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/barang",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"barang"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit barang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/barang/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"barang",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update barang",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								},
+								{
+									"key": "nama_barang",
+									"value": "KOMPUTER",
+									"type": "text"
+								},
+								{
+									"key": "kategori",
+									"value": "ELEKTRONIK",
+									"type": "text"
+								},
+								{
+									"key": "harga",
+									"value": "1500000011",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/barang/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"barang",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete barang",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/barang/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"barang",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pelanggan",
+			"item": [
+				{
+					"name": "get pelanggan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pelanggan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store pelanggan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nama_pelanggan",
+									"value": "BAMBANG",
+									"type": "text"
+								},
+								{
+									"key": "domisili",
+									"value": "JAK-SEL",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "PRIA",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pelanggan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit pelanggan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pelanggan/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggan",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update pelanggan",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								},
+								{
+									"key": "nama_pelanggan",
+									"value": "SUMANTO",
+									"type": "text"
+								},
+								{
+									"key": "domisili",
+									"value": "JAK-TIM",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "PRIA",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pelanggan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete pelanggan",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/pelanggan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pelanggan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "penjualan",
+			"item": [
+				{
+					"name": "get penjualan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/penjualan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"penjualan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "store penjualan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_pelanggan\": 10,\r\n    \"tanggal\": \"2018-01-04\",\r\n    \"items\": [\r\n        {\r\n            \"id_barang\": 5,\r\n            \"qty\": 1\r\n        },\r\n        {\r\n            \"id_barang\": 2,\r\n            \"qty\": 9\r\n        },\r\n        {\r\n            \"id_barang\": 1,\r\n            \"qty\": 2\r\n        },\r\n        {\r\n            \"id_barang\": 1,\r\n            \"qty\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/penjualan",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"penjualan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit penjualan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/penjualan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"penjualan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update penjualan",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_method\": \"PUT\",\r\n    \"id_pelanggan\": 10,\r\n    \"tanggal\": \"2018-01-04\",\r\n    \"subtotal\": 190000,\r\n    \"items\": [\r\n        {\r\n            \"id_barang\": 5,\r\n            \"qty\": 1\r\n        },\r\n        {\r\n            \"id_barang\": 2,\r\n            \"qty\": 9\r\n        },\r\n        {\r\n            \"id_barang\": 1,\r\n            \"qty\": 2\r\n        },\r\n        {\r\n            \"id_barang\": 1,\r\n            \"qty\": 2\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/penjualan/11",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"penjualan",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete penjualan",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/penjualan/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"penjualan",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "tesProjectMiniUnggulSolusi",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-API-KEY",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
