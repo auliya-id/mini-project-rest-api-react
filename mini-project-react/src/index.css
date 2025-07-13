@@ -23,3 +23,7 @@ code {
 .bg-secondary-soft {
     background-color: #EEEFF6;
 }
+
+.no-underline {
+    text-decoration: none !important;
+}

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import 'react-loading-skeleton/dist/skeleton.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LayoutAdmin from "./components/LayoutAdmin";
+import Home from "./pages/Home";
 // Pelanggan
 import Pelanggan from "./pages/Pelanggan";
 import PelangganForm from "./components/PelangganForm"; 
@@ -18,6 +19,7 @@ function App() {
         <Router>
             <LayoutAdmin>
                 <Routes>
+                    <Route path="/" element={<Home />} />
                     {/* Pelanggan */}
                     <Route path="/pelanggan" element={<Pelanggan />} />
                     <Route path="/pelanggan/create" element={<PelangganForm />} />

@@ -16,7 +16,11 @@ const LayoutAdmin = ({ children }) => {
         <div className="d-flex" style={{ minHeight: "100vh" }}>
             {/* Sidebar */}
             <nav className="bg-green text-white p-3" style={{ width: "220px" }}>
-                <h4 className="text-center mb-4">Mini Admin</h4>
+                <Link to="/" className="no-underline">
+                    <h4 className="text-center mb-4 text-white">
+                        Mini Admin
+                    </h4>
+                </Link>
                 <ul className="nav flex-column">
                     {navItems.map((item) => (
                         <li className="nav-item" key={item.path}>
