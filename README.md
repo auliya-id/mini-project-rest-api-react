@@ -18,7 +18,7 @@ Project ini saya buat menggunakan bahasa pemrograman PHP versi 8.2 dengan framew
 **2. FOLDER mini-project-react:**
 - lakukan `npm install`
 - lakukan `npm start`
-- buka pada browser dengan link `http://127.0.0.1:3000`
+- buka pada browser dengan link `http://localhost:3000`
 
 ## Pengembang
 
