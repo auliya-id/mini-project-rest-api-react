@@ -22,12 +22,14 @@ class PelangganController extends Controller
                 'nama_pelanggan' => 'required|string|max:255',
                 'domisili' => 'required|string|max:255',
                 'jenis_kelamin' => 'required|string|max:255',
+                'alamat' => 'required|string|max:255',
             ]);
 
             $pelanggan = Pelanggan::create([
                 'nama_pelanggan' => $data['nama_pelanggan'],
                 'domisili' => $data['domisili'],
                 'jenis_kelamin' => $data['jenis_kelamin'],
+                'alamat' => $data['alamat'],
             ]);
 
             // Generate kode_pelanggan
@@ -70,6 +72,7 @@ class PelangganController extends Controller
                 'nama_pelanggan' => 'required|string|max:255',
                 'domisili' => 'required|string|max:255',
                 'jenis_kelamin' => 'required|string|max:255',
+                'alamat' => 'required|string|max:255',
             ]);
 
             $pelanggan = Pelanggan::findOrFail($id);

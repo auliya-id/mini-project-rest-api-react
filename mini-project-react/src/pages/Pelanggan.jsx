@@ -93,6 +93,7 @@ export default function Pelanggan() {
         { name: "Kode Pelanggan", selector: row => row.kode_pelanggan, sortable: true },
         { name: "Nama Pelanggan", selector: row => row.nama_pelanggan, sortable: true },
         { name: "Domisili", selector: row => row.domisili, sortable: true },
+        { name: "Alamat", selector: row => row.alamat, sortable: true },
         { name: "Jenis Kelamin", selector: row => row.jenis_kelamin, sortable: true },
         { name: "Aksi",
             cell: (row) => (

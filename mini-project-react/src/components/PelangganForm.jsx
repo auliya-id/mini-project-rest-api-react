@@ -14,6 +14,7 @@ const PelangganForm = () => {
     const [form, setForm] = useState({
         nama_pelanggan: "",
         domisili: "",
+        alamat: "",
         jenis_kelamin: ""
     });
 
@@ -94,6 +95,21 @@ const PelangganForm = () => {
                                 name="domisili"
                                 value={form.domisili}
                                 placeholder="Ex: JAK-BAR"
+                                onChange={handleChange}
+                                required
+                            />}
+                        </div>
+
+                        <div className="mb-3">
+                            <label htmlFor="alamat" className="form-label">Alamat</label>
+                            {loading ? <Skeleton height={38} /> :
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="alamat"
+                                name="alamat"
+                                value={form.alamat}
+                                placeholder="Ex: Jl. In Aja"
                                 onChange={handleChange}
                                 required
                             />}

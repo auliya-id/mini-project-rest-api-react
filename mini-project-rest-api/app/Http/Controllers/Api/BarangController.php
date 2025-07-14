@@ -23,12 +23,14 @@ class BarangController extends Controller
                 'nama_barang' => 'required|string|max:255',
                 'kategori' => 'required|string|max:255',
                 'harga' => 'required|numeric',
+                'warna' => 'required|string|max:255',
             ]);
 
             $barang = Barang::create([
                 'nama_barang' => $data['nama_barang'],
                 'kategori' => $data['kategori'],
                 'harga' => $data['harga'],
+                'warna' => $data['warna'],
             ]);
 
             // Generate kode_barang
@@ -71,6 +73,7 @@ class BarangController extends Controller
                 'nama_barang' => 'required|string|max:255',
                 'kategori' => 'required|string|max:255',
                 'harga' => 'required|numeric',
+                'warna' => 'required|string|max:255',
             ]);
 
             $barang = Barang::findOrFail($id);

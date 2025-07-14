@@ -109,7 +109,7 @@ export default function Penjualan() {
                             <div className="card shadow-sm h-100 border-0">
                                 <div className="card-body">
                                     <h5 className="card-title fw-semibold mb-2">
-                                        {transaksi.nama_pelanggan} ({transaksi.kode_pelanggan})
+                                        {transaksi.nama_pelanggan} ({transaksi.kode_pelanggan}) - {transaksi.alamat}
                                     </h5>
                                     <p className="mb-1 text-muted">Kode Nota: {transaksi.kode_nota}</p>
                                     <p className="mb-1 text-muted">Tanggal: {transaksi.tanggal}</p>
@@ -121,7 +121,7 @@ export default function Penjualan() {
                                         <ul className="mb-3">
                                             {transaksi.items.map((item, i) => (
                                                 <li key={i}>
-                                                    {item.nama_barang} ({item.kode_barang}): {parseFloat(item.harga).toLocaleString("id-ID", { style: "currency", currency: "IDR" })} * Qty: {item.qty} =&nbsp;
+                                                    {item.nama_barang} ({item.kode_barang}) {item.warna}: {parseFloat(item.harga).toLocaleString("id-ID", { style: "currency", currency: "IDR" })} * Qty: {item.qty} =&nbsp;
                                                     {parseFloat(item.harga * item.qty).toLocaleString("id-ID", { style: "currency", currency: "IDR" })}
                                                 </li>
                                             ))}

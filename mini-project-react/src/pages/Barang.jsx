@@ -93,6 +93,7 @@ export default function Barang() {
         { name: "Kode Barang", selector: row => row.kode_barang, sortable: true },
         { name: "Nama Barang", selector: row => row.nama_barang, sortable: true },
         { name: "Kategori", selector: row => row.kategori, sortable: true },
+        { name: "Warna", selector: row => row.warna, sortable: true },
         { name: "Harga", selector: row => formatRupiah(row.harga), sortable: true },
         { name: "Aksi",
             cell: (row) => (

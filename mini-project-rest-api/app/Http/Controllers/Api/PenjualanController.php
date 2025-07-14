@@ -20,12 +20,13 @@ class PenjualanController extends Controller
         $result = $penjualan->map(function ($p) {
             return [
                 'id' => $p->id,
-                'id_pelanggan' => $p->pelanggan->id,
+                'id_pelanggan' => $p->pelanggan->id ?? '',
                 'kode_nota' => $p->kode_nota,
                 'tanggal' => $p->tanggal,
                 'subtotal' => $p->subtotal,
                 'kode_pelanggan' => $p->pelanggan->kode_pelanggan ?? '',
                 'nama_pelanggan' => $p->pelanggan->nama_pelanggan ?? '',
+                'alamat' => $p->pelanggan->alamat ?? '',
                 'items' => $p->items->map(function ($i) use ($p) {
                     return [
                         'id' => $i->id ?? '',
@@ -34,6 +35,7 @@ class PenjualanController extends Controller
                         'qty' => $i->qty,
                         'kode_barang' => $i->barang->kode_barang ?? '',
                         'nama_barang' => $i->barang->nama_barang ?? '',
+                        'warna' => $i->barang->warna ?? '',
                         'harga' => $i->barang->harga ?? '',
                     ];
                 }),
@@ -119,6 +121,7 @@ class PenjualanController extends Controller
             'subtotal' => $penjualan->subtotal,
             'kode_pelanggan' => $penjualan->pelanggan->kode_pelanggan,
             'nama_pelanggan' => $penjualan->pelanggan->nama_pelanggan,
+            'alamat' => $penjualan->pelanggan->alamat,
             'items' => $penjualan->items->map(function ($item) {
                 return [
                     'id' => $item->id,
@@ -126,7 +129,8 @@ class PenjualanController extends Controller
                     'id_barang' => $item->barang->id,
                     'qty' => $item->qty,
                     'kode_barang' => $item->barang->kode_barang,
-                    'nama_barang' => $item->barang->nama_barang
+                    'nama_barang' => $item->barang->nama_barang,
+                    'warna' => $item->barang->warna,
                 ];
             })
         ]);

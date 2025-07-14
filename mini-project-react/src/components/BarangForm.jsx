@@ -13,8 +13,7 @@ const BarangForm = () => {
 
     const [form, setForm] = useState({
         nama_barang: "",
-        domisili: "",
-        jenis_kelamin: ""
+        warna: ""
     });
 
     useEffect(() => {
@@ -109,6 +108,21 @@ const BarangForm = () => {
                                 name="harga"
                                 value={form.harga}
                                 placeholder="Ex: 12000"
+                                onChange={handleChange}
+                                required
+                            />}
+                        </div>
+
+                        <div className="mb-3">
+                            <label htmlFor="warna" className="form-label">Warna Barang</label>
+                            {loading ? <Skeleton height={38} /> :
+                            <input
+                                type="text"
+                                className="form-control"
+                                id="warna"
+                                name="warna"
+                                value={form.warna}
+                                placeholder="Ex: HIJAU"
                                 onChange={handleChange}
                                 required
                             />}

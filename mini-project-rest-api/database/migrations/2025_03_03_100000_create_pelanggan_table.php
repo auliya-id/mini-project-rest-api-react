@@ -18,6 +18,7 @@ class CreatePelangganTable extends Migration
             $table->string('kode_pelanggan', 255)->nullable();
             $table->string('nama_pelanggan', 255)->nullable();
             $table->string('domisili', 255)->nullable();
+            $table->string('alamat', 255)->nullable();
             $table->string('jenis_kelamin', 255)->nullable();
 
             $table->timestamps();
